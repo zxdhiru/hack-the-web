@@ -2,12 +2,17 @@
 import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
-const Navbar = () => {
+const Navbar = ({ classes }: { classes: string }) => {
   return (
-    <div className="bg-gray-800 text-white flex flex-row py-4 px-4 justify-between items-center">
+    <div
+      className={`bg-gray-800 text-white flex flex-row py-4 px-4 justify-between items-center ${classes}`}
+    >
       {/* Logo */}
-      <h1>Logo.</h1>
+      <Link href={"/"}>
+        <h1>TECHSPIRE</h1>
+      </Link>
       {/* Menu */}
       <div className="flex">
         <ul className="flex justify-between gap-4 ">
@@ -15,10 +20,10 @@ const Navbar = () => {
             <Link href={"/events"}>Events</Link>
           </li>
           <li>
-            <Link href={"/events"}>Projects</Link>
+            <Link href={"/projects"}>Projects</Link>
           </li>
           <li>
-            <Link href={"/events"}>Leaderboard</Link>
+            <Link href={"/leadership"}>Leaderboard</Link>
           </li>
         </ul>
       </div>
