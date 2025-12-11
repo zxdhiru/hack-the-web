@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <div className="bg-transparent flex flex-row py-4 px-4 justify-between">
+    <div className="bg-gray-800 text-white flex flex-row py-4 px-4 justify-between items-center">
       {/* Logo */}
       <h1>Logo.</h1>
       {/* Menu */}
@@ -23,7 +23,7 @@ const Navbar = () => {
         </ul>
       </div>
       {/* Button */}
-      <Button className="hidden sm:block">Register</Button>
+      {/* <Button className="hidden sm:block">Register</Button> */}
     </div>
   );
 };
